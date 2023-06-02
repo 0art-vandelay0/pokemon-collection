@@ -7,38 +7,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politcal Meter</title>
+    <title>Pokedex </title>
 </head>
 
 <body>
     <div>
-        <h1>Politcal Meter</h1>
-        <p>This is a test.</p>
+        <h1>Pokedex</h1>
+        <p>Which Pokemon do you have?</p>
 
         <form id="politicalSurvey">
-            <label for="q1">I support Universal Heathcare </label>
+            <label for="q1"><img class="bulba"
+                    src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/bulbasaur-bulb.jpg"
+                    alt="Bulbasaur: a light green pokemon with dark green spots that walks on all fours"></label>
             <input id="q1" type="checkbox" name="q1" value="yes">
             <br>
-            <label for="q2">I want increased tax on the wealthy </label>
+            <label for="q2"><img src="https://www.bitgab.com/uploads/1597796080-pikachu-1597796080.png"
+                    alt="Pikachu: a yellow pokemon with black tipped ears and red cheeks"></label>
             <input id="q2" type="checkbox" name="q2" value="yes">
             <br>
-            <label for="q3">I want scricter gun control laws </label>
+            <label for="q3"><img class="charm"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLkHVc2BaVB2CW9gtmCROj8Uxq0YExyz-8YQ&usqp=CAU"></label>
             <input id="q3" type="checkbox" name="q3" value="yes">
             <br>
             <button id="subButton" type="submit">Submit</button>
         </form>
         <div class="largeFont">
-            <div id="conservative" class="hidden">
-                <p>You are a Conservative. tsk tsk.</p>
+            <div id="pokeNovice" class="hidden">
+                <p>You are a Novice. Keep at it.</p>
             </div>
-            <div id="moderate" class="hidden">
-                <p>You are a Moderate. tsk tsk.</p>
+            <div id="pokeIntermediate" class="hidden">
+                <p>You're getting there.</p>
             </div>
-            <div id="liberal" class="hidden">
-                <p>You are a Liberal. tsk tsk.</p>
+            <div id="pokeMaster" class="hidden">
+                <p>You are a Poke Master!</p>
             </div>
-            <div id="asshole" class="hidden">
-                <p>You're just an asshole. tsk tsk.</p>
+            <div id="pokeNewbie" class="hidden">
+                <p>You're just a newbie. Keep going!</p>
             </div>
         </div>
     </div>

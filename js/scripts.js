@@ -1,8 +1,8 @@
 function hideResults() {
-    document.getElementById("liberal").setAttribute("class", "hidden");
-    document.getElementById("conservative").setAttribute("class", "hidden");
-    document.getElementById("moderate").setAttribute("class", "hidden");
-    document.getElementById("asshole").setAttribute("class", "hidden");
+    document.getElementById("pokeMaster").setAttribute("class", "hidden");
+    document.getElementById("pokeNovice").setAttribute("class", "hidden");
+    document.getElementById("pokeIntermediate").setAttribute("class", "hidden");
+    document.getElementById("pokeNewbie").setAttribute("class", "hidden");
 };
 
 window.onload = function () {
@@ -14,13 +14,13 @@ window.onload = function () {
         const q3 = document.querySelector("input#q3").checked;
 
         if (q1 && q2 && q3) {
-            document.getElementById("liberal").removeAttribute("class");
+            document.getElementById("pokeMaster").removeAttribute("class");
         } else if ((q1 && q2) || (q2 && q3) || (q1 && q3)) {
-            document.getElementById("moderate").removeAttribute("class");
+            document.getElementById("pokeIntermediate").removeAttribute("class");
         } else if (q1 || q2 || q3) {
-            document.getElementById("conservative").removeAttribute("class");
+            document.getElementById("pokeNovice").removeAttribute("class");
         } else {
-            document.getElementById("asshole").removeAttribute("class");
+            document.getElementById("pokeNewbie").removeAttribute("class");
         };
     };
 };

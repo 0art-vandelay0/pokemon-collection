@@ -5,3 +5,20 @@
 .largeFont {
     font-size: 35px;
 }
+
+button {
+    margin: 10px;
+}
+
+img {
+    width: 75px;
+    height: 75px;
+}
+
+.bulba {
+    height: 60px;
+}
+
+.charm {
+    height: 95px;
+}
