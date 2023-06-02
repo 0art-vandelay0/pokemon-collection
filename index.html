@@ -3,7 +3,7 @@
 
 <head>
     <script src="js/scripts.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
         <h1>Politcal Meter</h1>
         <p>This is a test.</p>
 
-        <form>
+        <form id="politicalSurvey">
             <label for="q1">I support Universal Heathcare </label>
             <input id="q1" type="checkbox" name="q1" value="yes">
             <br>
@@ -24,7 +24,23 @@
             <br>
             <label for="q3">I want scricter gun control laws </label>
             <input id="q3" type="checkbox" name="q3" value="yes">
+            <br>
+            <button id="subButton" type="submit">Submit</button>
         </form>
+        <div class="largeFont">
+            <div id="conservative" class="hidden">
+                <p>You are a Conservative. tsk tsk.</p>
+            </div>
+            <div id="moderate" class="hidden">
+                <p>You are a Moderate. tsk tsk.</p>
+            </div>
+            <div id="liberal" class="hidden">
+                <p>You are a Liberal. tsk tsk.</p>
+            </div>
+            <div id="asshole" class="hidden">
+                <p>You're just an asshole. tsk tsk.</p>
+            </div>
+        </div>
     </div>
 </body>
 
